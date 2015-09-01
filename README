@@ -2,14 +2,9 @@ These examples demonstrate how to create an OAuth 2.0 client in different operat
 
 The directory structure is as follows:
 
-Android             Example application for Android
-          ->Prebuilt APK    Installation package
-          ->Source          Source code
-
-iOS                 Example application for iOS
-          ->Source          Source code
-		  
 PowerShell          PowerShell script for Windows
+
+WindowsPhone        Example application for WindowsPhone
 
 LICENSE             License terms
 README              This file
