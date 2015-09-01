@@ -1,0 +1,15 @@
+Android demo OAuth Client
+
+
+To open with Android Studio use "Import project (Eclipse ADT, Gradle, etc.)" in Quick Start and select
+the oauthclient path.
+
+Configuration is defined under Config class in AuthActivity.java
+
+Config.useTokenInfo selects the sequence to be used:
+useTokenInfo = true -> implement the mobile app & resource server sequence and use tokeninfo
+useTokenInfo = false -> implement the web app sequence and use userinfo
+
+Misc notes:
+
+SSL certificate check is disabled.
