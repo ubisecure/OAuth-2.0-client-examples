@@ -1,9 +1,13 @@
 These examples demonstrate how to create an OAuth 2.0 client in different operating systems.
 
-The file structure is as follows:
+The directory structure is as follows:
 
-Android				Example application for Android
-iOS					Example application for iOS
-LICENSE				License terms
-README				This file
-code-grant.zip		PowerShell script for Windows
+Android             Example application for Android
+            Prebuilt APK    Installation package
+            Source          Source code
+
+iOS                 Example application for iOS
+            Source          Source code
+PowerShell          PowerShell script for Windows
+LICENSE             License terms
+README              This file
