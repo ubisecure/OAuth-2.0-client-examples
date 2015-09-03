@@ -6,5 +6,8 @@ PowerShell          PowerShell script for Windows
 
 WindowsPhone        Example application for WindowsPhone
 
+iOS                 Example application for iOS
+          ->Source          Source code
+
 LICENSE             License terms
 README              This file
