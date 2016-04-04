@@ -24,7 +24,7 @@ $resource = ConvertFrom-Json @"
 }
 "@
 # authorization server metadata
-$metadata = Invoke-RestMethod -Uri "https://sso73.ubisecurecloudtest.com/uas/oauth2/metadata.json"
+$metadata = Invoke-RestMethod -Uri "https://login.test.globalsignid.com/uas/oauth2/metadata.json"
 Write-Verbose "metadata.json: $($metadata)"
 
 # windows forms dependencies
@@ -57,8 +57,8 @@ $web.add_Navigating({
 })
 
 # send authorization code request, scope either userinfo or client_id of resource server
-#$scope = "userinfo"
-$scope = $resource.client_id
+$scope = "openid"
+#$scope = $resource.client_id
 $web.Navigate("$($metadata.authorization_endpoint)?scope=$($scope)&response_type=code&redirect_uri=$($clientreq.redirect_uris[0])&client_id=$($clientres.client_id)")
 # show browser window, waits for window to close
 if($form.ShowDialog() -ne "OK") {
@@ -84,7 +84,7 @@ Write-Verbose "token-request: $([pscustomobject]$tokenrequest)"
 $token = Invoke-RestMethod -Method Post -Uri $metadata.token_endpoint -Headers $basic -Body $tokenrequest
 Write-Verbose "token-response: $($token)"
 
-if($token.scope -eq "userinfo") {
+if($token.scope -eq "openid") {
     # userinfo request
     $bearer = @{ "Authorization" = ("Bearer", $token.access_token -join " ") }
     Invoke-RestMethod -Uri $metadata.userinfo_endpoint -Headers $bearer
