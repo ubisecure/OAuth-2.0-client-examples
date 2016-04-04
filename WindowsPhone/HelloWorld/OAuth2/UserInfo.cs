@@ -10,9 +10,9 @@ namespace HelloWorld.OAuth2
     [DataContract]
     public class UserInfo
     {
-        [DataMember(Name = "usn", IsRequired = false)]
+        [DataMember(Name = "sub", IsRequired = false)]
         public string UserName { get; set; }
-        [DataMember(Name = "mail", IsRequired = false)]
+        [DataMember(Name = "email", IsRequired = false)]
         public string Mail { get; set; }
         [DataMember(Name = "mobile", IsRequired = false)]
         public string Mobile { get; set; }

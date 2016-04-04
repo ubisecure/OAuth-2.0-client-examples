@@ -150,7 +150,7 @@ namespace HelloWorld
 
         private void Logon_Click(object sender, RoutedEventArgs e)
         {
-            Logon.Navigate(RelyingParty.SSO73);
+            Logon.Navigate(RelyingParty.GLOBALSIGNID);
         }
 
         private RelyingParty RelyingParty

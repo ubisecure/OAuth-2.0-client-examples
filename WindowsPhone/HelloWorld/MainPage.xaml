@@ -34,7 +34,7 @@
         <!--TODO: Content should be placed within the following grid-->
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
             <StackPanel Grid.Row="1" Margin="0,30,0,0">
-                <TextBlock Text="What's your name?" Style="{StaticResource BaseTextBlockStyle}"/>
+                <TextBlock Text="Please logon" Style="{StaticResource BaseTextBlockStyle}"/>
                 <Button Content="Logon" Click="Logon_Click" />
                 <TextBlock x:Name="textOutput" Text="Output" Style="{StaticResource BaseTextBlockStyle}"/>
             </StackPanel>

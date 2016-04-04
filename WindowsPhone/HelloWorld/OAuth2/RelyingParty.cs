@@ -15,13 +15,13 @@ namespace HelloWorld.OAuth2
 {
     public class RelyingParty
     {
-        public static readonly Config SSO73 = new Config
+        public static readonly Config GLOBALSIGNID = new Config
         {
             CLIENT_ID = "client1",
             CLIENT_SECRET = "client1.secret",
-            SCOPE = "userinfo",
+            SCOPE = "openid",
             REDIRECT_URI = "https://client1.ubidemo.com",
-            METADATA_URI = "https://sso73.ubisecurecloudtest.com/uas/oauth2/metadata.json",
+            METADATA_URI = "https://login.test.globalsignid.com/uas/oauth2/metadata.json",
         };
         public HttpRequestMessage NewMetadataRequest(Config config)
         {
