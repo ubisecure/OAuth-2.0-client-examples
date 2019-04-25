@@ -10,16 +10,12 @@ These examples demonstrate how to create an OAuth 2.0 client in different operat
 The directory structure is as follows:
 
 * PowerShell
-  PowerShell script for Windows
-
+  * PowerShell script for Windows
 * WindowsPhone
-  Example application for WindowsPhone
-
+  * Example application for WindowsPhone
 * iOS
-  Example application for iOS
-
+  * Example application for iOS
 * LICENSE
-  License terms
-
-* README
-  This file
+  * License terms
+* README.md
+  * This file
