@@ -7,6 +7,8 @@ These examples perform the authorization request in an embedded user-agent.
 
 See also https://tools.ietf.org/html/rfc8252
 
+---
+
 These examples demonstrate how to create an OAuth 2.0 client in different operating systems.
 
 The directory structure is as follows:
